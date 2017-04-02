@@ -6,13 +6,13 @@ BBPATH = "${TOPDIR}"
 BBFILES ?= ""
 
 BBLAYERS ?= " \
-    ${HOME}/poky-morty/meta \
-    ${HOME}/poky-morty/meta-poky \
-    ${HOME}/poky-morty/meta-openembedded/meta-oe \
-    ${HOME}/poky-morty/meta-openembedded/meta-multimedia \
-    ${HOME}/poky-morty/meta-openembedded/meta-networking \
-    ${HOME}/poky-morty/meta-openembedded/meta-python \
-    ${HOME}/poky-morty/meta-qt5 \
-    ${HOME}/poky-morty/meta-raspberrypi \
-    ${HOME}/rpi/meta-rpi \
+    /home/localadmin/repos/rpi/rpi_yocto/sources/poky/meta \
+    /home/localadmin/repos/rpi/rpi_yocto/sources/poky/meta-poky \
+    /home/localadmin/repos/rpi/rpi_yocto/sources/meta-openembedded/meta-oe \
+    /home/localadmin/repos/rpi/rpi_yocto/sources/meta-openembedded/meta-multimedia \
+    /home/localadmin/repos/rpi/rpi_yocto/sources/meta-openembedded/meta-networking \
+    /home/localadmin/repos/rpi/rpi_yocto/sources/meta-openembedded/meta-python \
+    /home/localadmin/repos/rpi/rpi_yocto/sources/meta-qt5 \
+    /home/localadmin/repos/rpi/rpi_yocto/sources/meta-raspberrypi \
+    /home/localadmin/repos/rpi/rpi_yocto/sources/meta-rpi \
   "

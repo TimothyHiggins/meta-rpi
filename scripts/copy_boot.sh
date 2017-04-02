@@ -1,5 +1,8 @@
 #!/bin/bash
 
+MACHINE=raspberrypi2
+OETMP=/home/localadmin/repos/rpi/rpi_yocto/build/tmp
+
 if [ -z "${MACHINE}" ]; then
 	echo "Environment variable MACHINE not set"
 	echo "Example: export MACHINE=raspberrypi2 or export MACHINE=raspberrypi"
