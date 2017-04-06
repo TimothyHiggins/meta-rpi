@@ -4,14 +4,21 @@ update_config=1
 fast_reauth=1
 ap_scan=1
 
+# Home
 #network={
 #    key_mgmt=WPA-PSK
-#    ssid="<ssid>"
-#    psk="<passphrase>"
+#    ssid="Orion"
+#    psk="XXXXX"
 #}
 
-# open network
-#network={
-#    key_mgmt=NONE
-#    ssid="<ssid>"
-#}
+# Hach
+network={
+        ssid="HachWlan-Net"
+        scan_ssid=1
+        key_mgmt=WPA-EAP
+        eap=PEAP
+        #phase2="auth=MSCHAPV2"
+        identity="thiggins"
+        password="XXXXX"
+}
+

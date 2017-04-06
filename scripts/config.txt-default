@@ -1070,7 +1070,7 @@ disable_overscan=1
 ##
 ##     Default off.
 ##
-#dtparam=i2c_arm=off
+#dtparam=i2c_arm=on
 
 ## i2c_vc
 ##     Enable the i2c interface
@@ -1107,7 +1107,7 @@ disable_overscan=1
 ##
 ##     Default off.
 ##
-#dtparam=spi=off
+#dtparam=spi=on
 
 ## random
 ##     Set to "on" to enable the hardware random
@@ -1192,3 +1192,15 @@ enable_uart=1
 
 ## Disable RPi3 bluetooth to enable serial console on UART0
 dtoverlay=pi3-disable-bt
+
+# Overlay: Enable both PWM channels, PWM0 on GPIO12 and PWM1 on GPIO13.
+#dtoverlay=pwm-2chan-with-clk
+#dtoverlay=pwm-2chan-with-clk,pin=12,func=4,pin2=13,func2=4
+
+# Overlay: 
+# 1. Assign higher performance UART1 to the pins 8/10 of expansion header (/dev/ttyAMA0).
+# 2. Assign mini-UART0 to Bluetooth (/dev/ttyS0).
+#dtoverlay=pi3-miniuart-bt
+
+
+
