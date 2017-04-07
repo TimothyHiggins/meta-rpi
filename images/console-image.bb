@@ -84,6 +84,16 @@ EXTRA_TOOLS_INSTALL = " \
     zip \
  "
 
+FWDEV_TOOLS = " \
+    zeromq \
+    boost \
+    rsync \
+    protobuf \
+	tmux \
+    vim \
+    bash \
+ "
+
 CAN_TOOLS = " \
     canutils \
  "
@@ -107,6 +117,7 @@ IMAGE_INSTALL += " \
     ${EXTRA_TOOLS_INSTALL} \
     ${RPI_STUFF} \
     ${WIFI_SUPPORT} \
+    ${FWDEV_TOOLS} \ 
  "
 
 set_local_timezone() {
