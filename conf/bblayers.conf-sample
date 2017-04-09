@@ -5,14 +5,16 @@ POKY_BBLAYERS_CONF_VERSION = "2"
 BBPATH = "${TOPDIR}"
 BBFILES ?= ""
 
+BSPDIR := "${@os.path.abspath(os.path.dirname(d.getVar('FILE', True)) + '/../..')}"
+
 BBLAYERS ?= " \
-    ${HOME}/poky-krogoth/meta \
-    ${HOME}/poky-krogoth/meta-poky \
-    ${HOME}/poky-krogoth/meta-openembedded/meta-oe \
-    ${HOME}/poky-krogoth/meta-openembedded/meta-multimedia \
-    ${HOME}/poky-krogoth/meta-openembedded/meta-networking \
-    ${HOME}/poky-krogoth/meta-openembedded/meta-python \
-    ${HOME}/poky-krogoth/meta-qt5 \
-    ${HOME}/poky-krogoth/meta-raspberrypi \
-    ${HOME}/rpi/meta-rpi \
+    ${BSPDIR}/sources/poky/meta \
+    ${BSPDIR}/sources/poky/meta-poky \
+    ${BSPDIR}/sources/meta-openembedded/meta-oe \
+    ${BSPDIR}/sources/meta-openembedded/meta-multimedia \
+    ${BSPDIR}/sources/meta-openembedded/meta-networking \
+    ${BSPDIR}/sources/meta-openembedded/meta-python \
+    ${BSPDIR}/sources/meta-qt5 \
+    ${BSPDIR}/sources/meta-raspberrypi \
+    ${BSPDIR}/sources/meta-rpi \
   "

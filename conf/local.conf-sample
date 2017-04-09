@@ -51,3 +51,10 @@ PATCHRESOLVE = "noop"
 RM_OLD_IMAGE = "1"
 
 CONF_VERSION = "1"
+
+# Create local source download pre-mirror.
+SOURCE_MIRROR_URL ?= "file:///data/pre-mirror/"
+INHERIT += "own-mirrors"
+BB_GENERATE_MIRROR_TARBALLS = "1"
+BB_FETCH_PREMIRRORONLY = "1"
+#BB_NO_NETWORK = "1"
